@@ -1,0 +1,15 @@
+.update-book-button {
+    font-size: 1.2rem;
+    background-color: #28a4c9;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.update-book-button:hover {
+    background-color: #2574ad;
+    box-shadow: 0 0 10px #2574ad;
+}

@@ -1,0 +1,100 @@
+
+
+/* Contenedor principal del perfil */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background: #9ad3e8;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  /* Imagen de perfil */
+  .profile-image {
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Nombre de usuario */
+  .name {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  /* Correo electrónico */
+  .email {
+    font-size: 18px;
+    color: #332e2e;
+    margin-bottom: 20px;
+  }
+  
+  /* Balance de Bookoins */
+  .balance {
+    background-color: rgb(249, 226, 95);
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Secciones de la billetera y mensajes */
+  .wallet-section,
+  .messages-section,
+  .links-section {
+    background-color: #9ad3e8;;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Estilo de los enlaces */
+  .profile-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 20px;
+    background: #3085d6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .profile-link:hover {
+    background: #1e70bf;
+  }
+  
+  /* Estilo general para las tarjetas */
+  .card {
+    background: #9ad3e8;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .links-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 5vh;
+    
+  }

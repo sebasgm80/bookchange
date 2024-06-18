@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(132, 187, 255);
+}
+main {
+  position: relative;
+  width: 100vw;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}  
+

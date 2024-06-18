@@ -1,0 +1,126 @@
+.search-filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.filter-select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #bce3db;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  width: 100%;
+  max-width: 200px;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+
+
+.book-card img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.book-info {
+  text-align: center;
+}
+
+.book-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.BK1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffab00;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border: 1px solid #ffab00;
+  border-radius: 5px;
+  background-color: #fff3cd;
+}
+
+.data-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.data-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.data-button.disabled {
+  background-color: #cc8383;
+  cursor: not-allowed;
+}
+
+.data-button.disabled:hover {
+  transform: none;
+  background-color: #ff4d4d;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .book-card {
+    max-width: 45%;
+  }
+
+  .search-input, .filter-select {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .books-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-card {
+    width: 90%;
+  }
+
+  .search-input, .filter-select {
+    width: 100px;
+  }
+}

@@ -1,0 +1,135 @@
+/* Transaction.css */
+
+.transaction-container {
+    width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+th {
+    text-align: center;
+    justify-content: center;
+}
+.transaction-list-header {
+    text-align: center;
+    justify-content: center;
+}
+
+.transaction-header {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.transaction-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transaction-list th, .transaction-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.transaction-list th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.transaction-item {
+    background-color: #fff;
+}
+
+.transaction-item:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.transaction-status.pending {
+    background-color: #ff9800;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.transaction-status.completed {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.transaction-status.failed {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .transaction-container {
+          
+        width: 90%;
+        
+    }
+
+    .transaction-header {
+        font-size: 1.2em;
+    }
+
+    .transaction-list-header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .transaction-list-body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    .transaction-container {
+        padding: 10px;
+    }
+
+    .transaction-header {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .transaction-list, .transaction-list th, .transaction-list td {
+        display: block;
+        width: 100%;
+    }
+
+    .transaction-list th, .transaction-list td {
+        text-align: right;
+        padding: 5px;
+        position: relative;
+    }
+
+    .transaction-list th::before, .transaction-list td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 5px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .transaction-list th:last-child, .transaction-list td:last-child {
+        border-bottom: 2px solid #ddd;
+    }
+}

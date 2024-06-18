@@ -1,0 +1,15 @@
+.wallet {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .wallet h1 {
+    color: #333;
+  }
+  
+  .wallet p {
+    font-size: 18px;
+  }
+  

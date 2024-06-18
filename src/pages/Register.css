@@ -1,0 +1,52 @@
+.form-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding:10px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.form {
+    margin: 0 auto;
+    gap: 0.5rem;
+}
+
+.form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.btn_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn1 {
+    font-size: 1rem;
+    background-color: #2f7a67;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    cursor: pointer;
+}
+
+
+
+.footerForm {
+    padding: 20px;
+}

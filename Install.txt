@@ -1,0 +1,30 @@
+- Installs -
+
+npm init -y
+npm i nodemon -D
+npm i express
+npm i mongoose
+npm i bcrypt --legacy-peer-deps
+npm i dotenv
+npm i multer multer-storage-cloudinary cloudinary --legacy-peer-deps
+npm i multer
+npm i cloudinary
+npm i cors
+npm i nodemailer
+npm i validator
+npm i jsonwebtoken
+
+
+
+- Scripts Package.json -
+
+{
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+
+React
+
+npm create vite@latest nombre-proyecto
+npm i
+npm run dev

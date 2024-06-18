@@ -1,0 +1,84 @@
+  form {
+    
+    
+    
+    
+    font-family: monospace;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #94c3b6;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+ 
+  
+  .add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #4c8ede;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    
+  }
+  
+.add:hover {
+    background-color: #45a049;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+  }
+  
+ .add:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  
+  
+  @media (max-width: 600px) {
+    form {
+      padding: 15px;
+    }
+  
+    input[type="text"],
+    input[type="number"],
+    input[type="file"] {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  

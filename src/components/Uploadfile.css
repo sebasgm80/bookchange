@@ -1,0 +1,60 @@
+/* Uploadfile.css */
+
+.uploader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #888;
+    cursor: pointer;
+    width: 100%; /* Asegura que el uploader tome todo el ancho del contenedor */
+}
+
+#file-image {
+    max-width: 5rem; /* Limita el ancho de la imagen al ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-top: 10px; /* Espacio entre el texto y la imagen */
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+#file-drag {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.divSelect {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#response, #messages {
+    margin-top: 10px;
+}
+
+/* Media Queries para ajustar el diseño en dispositivos más pequeños */
+@media (max-width: 768px) {
+    #file-image {
+        max-width: 90%; /* Hace que la imagen sea un poco más pequeña en tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    #file-drag {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #file-image {
+        max-width: 80%; /* Hace que la imagen sea aún más pequeña en móviles */
+    }
+}

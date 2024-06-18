@@ -1,0 +1,19 @@
+footer {
+    min-height: 5vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-text {
+    color: #010104;
+    text-align: center;
+    font-size: 1.3rem;
+}
